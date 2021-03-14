@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Validate JSON
-        uses: OrRosenblatt/validate-json-action@0.1.0
+        uses: docker://orrosenblatt/validate-json-action:latest
         with:
     # Relative file path under the repository of a JSON schema file to validate the other JSON files with.
           schema: .github/slangschema.json
