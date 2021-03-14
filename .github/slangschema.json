@@ -2,28 +2,21 @@
   "$schema": "http://json-schema.org/schema#",
   "type": "array",
   "items": {
-    "$ref": "#/definitions/Welcome6Element"
-  },
-  "definitions": {
-    "Welcome6Element": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "source": {
-          "type": "string"
-        },
-        "slang": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
+    "type": "object",
+    "properties": {
+      "source": {
+        "type": "string"
       },
-      "required": [
-        "slang",
-        "source"
-      ],
-      "title": "Welcome6Element"
-    }
+      "slang": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "source",
+      "slang"
+    ]
   }
 }
