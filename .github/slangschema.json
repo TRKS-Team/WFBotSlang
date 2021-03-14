@@ -1,22 +1,29 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "array",
   "items": {
-    "type": "object",
-    "properties": {
-      "source": {
-        "type": "string"
-      },
-      "slang": {
-        "type": "array",
-        "items": {
+    "$ref": "#/definitions/Welcome6Element"
+  },
+  "definitions": {
+    "Welcome6Element": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source": {
           "type": "string"
+        },
+        "slang": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
-      }
-    },
-    "required": [
-      "source",
-      "slang"
-    ]
+      },
+      "required": [
+        "slang",
+        "source"
+      ],
+      "title": "Welcome6Element"
+    }
   }
 }
