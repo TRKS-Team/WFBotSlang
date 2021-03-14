@@ -28,8 +28,6 @@ jobs:
 
       - name: Validate JSON
         uses: docker://orrosenblatt/validate-json-action:latest
-        with:
-    # Relative file path under the repository of a JSON schema file to validate the other JSON files with.
-          schema: .github/slangschema.json
-    # One or more relative file paths under the repository (seperated by comma) of the JSON files to validate with the schema provided.
-          json: slang.json
+        env:
+         INPUT_SCHEMA: .github/slangschema.json
+         INPUT_JSONS: slang.json
