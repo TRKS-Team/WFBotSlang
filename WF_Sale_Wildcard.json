@@ -1,0 +1,59 @@
+{
+    "Slang": [
+        {
+            "Key": "Valkyr",
+            "Value": [
+                "瓦喵",
+                "瓦尔基里",
+                "女武神"
+            ]
+        },
+        {
+            "Key": "Zephyr",
+            "Value": [
+                "鸟姐"
+            ]
+        },
+        {
+            "Key": "Ember",
+            "Value": [
+                "火鸡"
+            ]
+        },
+        {
+            "Key": "Rhino",
+            "Value": [
+                "牛",
+                "犀牛"
+            ]
+        },
+        {
+            "Key": "Nova",
+            "Value": [
+                "诺娃",
+                "加速娃"
+            ]
+        }
+    ],
+    "CombinationSlang": [
+        {
+            "Pair": {
+                "Key": "prime",
+                "Value": "p"
+            },
+            "Reverse": true,
+            "Times": 1
+        },
+        {
+            "Pair": {
+                "Key": "蓝图",
+                "Value": "总图"
+            },
+            "Reverse": false,
+            "Times": 1
+        }
+    ],
+    "Suffixes": [
+        ""
+    ]
+}
