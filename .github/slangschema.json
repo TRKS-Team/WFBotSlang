@@ -1,22 +1,203 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "properties": {
-      "source": {
-        "type": "string"
-      },
-      "slang": {
-        "type": "array",
-        "items": {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Slang": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string"
+            },
+            "Value": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "Key",
+            "Value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string"
+            },
+            "Value": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "Key",
+            "Value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string"
+            },
+            "Value": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "Key",
+            "Value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string"
+            },
+            "Value": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "Key",
+            "Value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string"
+            },
+            "Value": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "Key",
+            "Value"
+          ]
+        }
+      ]
+    },
+    "CombinationSlang": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "Pair": {
+              "type": "object",
+              "properties": {
+                "Key": {
+                  "type": "string"
+                },
+                "Value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Key",
+                "Value"
+              ]
+            },
+            "Reverse": {
+              "type": "boolean"
+            },
+            "Times": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Pair",
+            "Reverse",
+            "Times"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "Pair": {
+              "type": "object",
+              "properties": {
+                "Key": {
+                  "type": "string"
+                },
+                "Value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Key",
+                "Value"
+              ]
+            },
+            "Reverse": {
+              "type": "boolean"
+            },
+            "Times": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Pair",
+            "Reverse",
+            "Times"
+          ]
+        }
+      ]
+    },
+    "Suffixes": {
+      "type": "array",
+      "items": [
+        {
           "type": "string"
         }
-      }
-    },
-    "required": [
-      "source",
-      "slang"
-    ]
-  }
+      ]
+    }
+  },
+  "required": [
+    "Slang",
+    "CombinationSlang",
+    "Suffixes"
+  ]
 }
