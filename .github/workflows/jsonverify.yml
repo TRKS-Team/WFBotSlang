@@ -30,4 +30,4 @@ jobs:
         uses: docker://orrosenblatt/validate-json-action:latest
         env:
          INPUT_SCHEMA: .github/slangschema.json
-         INPUT_JSONS: slang.json
+         INPUT_JSONS: WF_Sale_Wildcard.json
