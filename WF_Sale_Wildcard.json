@@ -42,7 +42,11 @@
                 "Value": "p"
             },
             "Reverse": true,
-            "Times": 1
+            "Times": 1,
+            "Condition": {
+                "Target": null,
+                "Case": 0
+            }
         },
         {
             "Pair": {
@@ -50,7 +54,25 @@
                 "Value": "总图"
             },
             "Reverse": false,
-            "Times": 1
+            "Times": 1,
+            "Condition": {
+                "Target": null,
+                "Case": 0
+            }
+        },
+        {
+            "Pair": {
+                "Key": "头部",
+                "Value": "头部神经光元"
+            },
+            "Reverse": true,
+            "Times": 1,
+            "Condition": {
+                "Target": [
+                    "头部神经光元"
+                ],
+                "Case": 2
+            }
         }
     ],
     "Suffixes": [
