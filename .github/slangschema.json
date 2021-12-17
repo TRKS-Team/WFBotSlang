@@ -145,12 +145,28 @@
             },
             "Times": {
               "type": "integer"
+            },
+            "Condition": {
+              "type": "object",
+              "properties": {
+                "Target": {
+                  "type": "null"
+                },
+                "Case": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "Target",
+                "Case"
+              ]
             }
           },
           "required": [
             "Pair",
             "Reverse",
-            "Times"
+            "Times",
+            "Condition"
           ]
         },
         {
@@ -176,12 +192,80 @@
             },
             "Times": {
               "type": "integer"
+            },
+            "Condition": {
+              "type": "object",
+              "properties": {
+                "Target": {
+                  "type": "null"
+                },
+                "Case": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "Target",
+                "Case"
+              ]
             }
           },
           "required": [
             "Pair",
             "Reverse",
-            "Times"
+            "Times",
+            "Condition"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "Pair": {
+              "type": "object",
+              "properties": {
+                "Key": {
+                  "type": "string"
+                },
+                "Value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Key",
+                "Value"
+              ]
+            },
+            "Reverse": {
+              "type": "boolean"
+            },
+            "Times": {
+              "type": "integer"
+            },
+            "Condition": {
+              "type": "object",
+              "properties": {
+                "Target": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "Case": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "Target",
+                "Case"
+              ]
+            }
+          },
+          "required": [
+            "Pair",
+            "Reverse",
+            "Times",
+            "Condition"
           ]
         }
       ]
